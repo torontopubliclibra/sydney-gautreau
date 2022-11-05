@@ -462,6 +462,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 body.nav-open {
   overflow-y: hidden;
@@ -687,7 +688,7 @@ footer .footer-logo {
     display: initial;
     position: absolute;
     left: 2%;
-    width: 100vw;
+    width: 100%;
   }
   header nav .hamburger-btn button {
     display: flex;
@@ -707,9 +708,6 @@ footer .footer-logo {
     color: #000000;
     cursor: pointer;
     transition: 0.5s;
-  }
-  header nav .hamburger-btn.open {
-    width: 100%;
   }
   header nav .hamburger-btn.open button {
     background-color: #ffffff;
@@ -772,5 +770,17 @@ footer .footer-logo {
   }
   .services-main .services-list .service h5, .services-main .services-list .service p {
     width: 90%;
+  }
+  .contact-main {
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .contact-main p {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .contact-main form {
+    margin: 5px;
+    width: 100%;
   }
 }
