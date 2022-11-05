@@ -185,14 +185,20 @@ footer {
 @media only screen and (max-width: 768px) {
   header {
     .heading {
+      text-align: left;
       h1 {
-        font-size: 45px;
+        font-size: 28px;
       }
       h2 {
-        font-size: 30px;
+        font-size: 22px;
       }
     }
     nav ul li {
+      font-size: 30px;
+    }
+  }
+  .banner-1 {
+    h3 {
       font-size: 30px;
     }
   }

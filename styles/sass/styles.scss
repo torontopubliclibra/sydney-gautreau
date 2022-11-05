@@ -29,6 +29,7 @@ body {
     background-color: $white;
     text-align: center;
     overflow-x: hidden;
+    width: 100%;
     max-width: 100vw;
     &.nav-open {
             overflow-y: hidden;
@@ -260,7 +261,7 @@ footer {
         width: 95%;
     }
     header {
-        min-height: calc(100vh - 60px);
+        height: 300px;
         nav {
             z-index: 4;
             width: 110%;
@@ -315,11 +316,12 @@ footer {
             }
         }
         .title {
+            padding: 0;
             width: 100%;
-            flex-wrap: wrap;
-            margin-top: 15px;
+            margin-top: 30px;
             .logo {
-                margin: 0px 30px;
+                width: 115px;
+                margin-right: 20px;
             }
         }
     }
