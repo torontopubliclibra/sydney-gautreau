@@ -388,6 +388,9 @@ header nav ul li a {
 .contact-main form {
   font-family: "Catamaran", sans-serif;
 }
+.contact-main form p {
+  font-size: 15px;
+}
 
 footer {
   font-family: "Catamaran", sans-serif;
@@ -669,13 +672,13 @@ header .title .heading h2 {
 }
 .contact-main form fieldset textarea {
   min-width: 100%;
-  margin-bottom: 20px;
 }
 .contact-main form fieldset .submit-button {
   width: 100%;
   display: flex;
   justify-content: left;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 .contact-main form fieldset .submit-button .button {
   border: none;
