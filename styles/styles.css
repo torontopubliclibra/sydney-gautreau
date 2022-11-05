@@ -679,6 +679,9 @@ footer .footer-logo {
   .wrapper {
     width: 95%;
   }
+  header {
+    min-height: calc(100vh - 60px);
+  }
   header nav {
     z-index: 4;
     width: 110%;

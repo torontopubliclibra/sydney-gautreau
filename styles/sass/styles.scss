@@ -260,6 +260,7 @@ footer {
         width: 95%;
     }
     header {
+        min-height: calc(100vh - 60px);
         nav {
             z-index: 4;
             width: 110%;
