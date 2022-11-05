@@ -207,10 +207,12 @@ header {
 
 .contact-main {
     background-color: $color2;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
     padding: 50px 0px;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
     p {
         width: 30%;
     }
@@ -235,9 +237,8 @@ header {
             .submit-button {
                 width: 100%;
                 display: flex;
-                justify-content: left;
+                justify-content: right;
                 margin-bottom: 5px;
-                margin-top: 20px;
                 .button {
                     border: none;
                     cursor: pointer;
@@ -310,7 +311,7 @@ footer {
                         background-color: $white;
                         color: $black;
                         i {
-                            transform: rotate(-90deg);
+                            transform: rotate(90deg);
                         }
                     }
                 }

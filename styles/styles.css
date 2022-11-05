@@ -645,10 +645,12 @@ header .title .heading h2 {
 
 .contact-main {
   background-color: #E0D6EA;
+  padding: 50px 0px;
+}
+.contact-main .wrapper {
   display: flex;
   justify-content: center;
   gap: 5%;
-  padding: 50px 0px;
 }
 .contact-main p {
   width: 30%;
@@ -676,9 +678,8 @@ header .title .heading h2 {
 .contact-main form fieldset .submit-button {
   width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   margin-bottom: 5px;
-  margin-top: 20px;
 }
 .contact-main form fieldset .submit-button .button {
   border: none;
@@ -747,7 +748,7 @@ footer .footer-logo {
     color: #000000;
   }
   header nav .hamburger-btn.open button i {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
   header nav ul {
     display: none;
