@@ -691,13 +691,13 @@ footer .footer-logo {
   }
   header nav {
     z-index: 4;
-    width: 110%;
+    width: 100%;
   }
   header nav .hamburger-btn {
     z-index: 5;
     display: initial;
     position: absolute;
-    left: 2%;
+    left: -1px;
     width: 100%;
   }
   header nav .hamburger-btn button {
@@ -710,7 +710,7 @@ footer .footer-logo {
   }
   header nav .hamburger-btn button i {
     font-size: 32px;
-    padding: 10px 25px;
+    padding: 10px 10px;
     transition: transform 0.5s;
   }
   header nav .hamburger-btn button:hover {

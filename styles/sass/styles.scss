@@ -264,12 +264,12 @@ footer {
         height: 300px;
         nav {
             z-index: 4;
-            width: 110%;
+            width: 100%;
             .hamburger-btn {
                 z-index: 5;
                 display: initial;
                 position: absolute;
-                left: 2%;
+                left: -1px;
                 width: 100%;
                 button {
                     display: flex;
@@ -280,7 +280,7 @@ footer {
                     width: 100%;
                     i {
                         font-size: 32px;
-                        padding: 10px 25px;
+                        padding: 10px 10px;
                         transition: transform 0.5s;
                     }
                     &:hover {
