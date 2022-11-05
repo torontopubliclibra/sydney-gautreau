@@ -807,8 +807,10 @@ footer .footer-logo {
     width: 90%;
   }
   .contact-main {
-    flex-wrap: wrap;
     padding: 25px;
+  }
+  .contact-main .wrapper {
+    flex-wrap: wrap;
   }
   .contact-main p {
     width: 90%;

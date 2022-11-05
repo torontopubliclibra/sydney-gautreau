@@ -391,7 +391,9 @@ footer {
         }
     }
     .contact-main {
-        flex-wrap: wrap;
+        .wrapper {
+            flex-wrap: wrap;
+        }
         padding: 25px;
         p {
             width: 90%;
