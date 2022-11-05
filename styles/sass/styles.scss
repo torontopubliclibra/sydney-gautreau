@@ -51,7 +51,7 @@ body {
     &:hover {
         background-color: $color2;
         color: $black;
-        transition: 0.4s;
+        transition: 0.5s;
     }
 }
 
@@ -291,10 +291,10 @@ footer {
                     border: none;
                     background-color: $color1;
                     color: $white;
-                    height: 60px;
+                    height: 55px;
                     width: 100%;
                     i {
-                        font-size: 32px;
+                        font-size: 30px;
                         padding: 10px 10px;
                         transition: transform 0.5s;
                     }
