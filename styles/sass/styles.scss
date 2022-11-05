@@ -57,7 +57,7 @@ body {
 
 // header styles
 header {
-    height: 500px;
+    height: 450px;
     position: relative;
     nav {
         width: 80%;
@@ -255,6 +255,17 @@ footer {
     margin: 40px;
 }
 
+@media only screen and (max-width: 1200px) {
+    header {
+        height: 350px;
+        .title {
+            .logo {
+                width: 150px;
+            }
+        }
+    }
+}
+
 // screens smaller than 768px
 @media only screen and (max-width: 768px) {
     .wrapper {
@@ -385,5 +396,8 @@ footer {
             margin: 5px;
             width: 100%;
         }
+    }
+    footer {
+        margin: 40px 20px;
     }
 }

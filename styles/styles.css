@@ -394,6 +394,17 @@ footer {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1200px) {
+  header .heading h1 {
+    font-size: 43px;
+  }
+  header .heading h2 {
+    font-size: 28px;
+  }
+  .banner-1 h3 {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 768px) {
   header .heading {
     text-align: left;
@@ -405,9 +416,6 @@ footer {
     font-size: 22px;
   }
   header nav ul li {
-    font-size: 30px;
-  }
-  .banner-1 h3 {
     font-size: 30px;
   }
   .testimonials blockquote {
@@ -493,7 +501,7 @@ body.nav-open {
 }
 
 header {
-  height: 500px;
+  height: 450px;
   position: relative;
 }
 header nav {
@@ -682,6 +690,14 @@ footer .footer-logo {
   width: 300px;
 }
 
+@media only screen and (max-width: 1200px) {
+  header {
+    height: 350px;
+  }
+  header .title .logo {
+    width: 150px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 95%;
@@ -793,5 +809,8 @@ footer .footer-logo {
   .contact-main form {
     margin: 5px;
     width: 100%;
+  }
+  footer {
+    margin: 40px 20px;
   }
 }

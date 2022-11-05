@@ -182,6 +182,24 @@ footer {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1200px) {
+  header {
+    .heading {
+      h1 {
+        font-size: 43px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+  .banner-1 {
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   header {
     .heading {
@@ -194,11 +212,6 @@ footer {
       }
     }
     nav ul li {
-      font-size: 30px;
-    }
-  }
-  .banner-1 {
-    h3 {
       font-size: 30px;
     }
   }
