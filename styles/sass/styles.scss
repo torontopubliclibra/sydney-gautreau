@@ -187,6 +187,9 @@ header {
     margin-bottom: 40px;
     .wrapper {
         width: 70%;
+        hr:last-of-type {
+            margin-bottom: 60px;
+        }
     }
 }
 

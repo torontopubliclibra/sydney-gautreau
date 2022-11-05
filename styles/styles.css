@@ -624,6 +624,9 @@ header .title .heading h2 {
 .testimonials .wrapper {
   width: 70%;
 }
+.testimonials .wrapper hr:last-of-type {
+  margin-bottom: 60px;
+}
 
 .testimonials-main {
   padding-bottom: 0;
