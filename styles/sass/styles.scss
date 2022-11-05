@@ -1,0 +1,374 @@
+@use 'partials/setup';
+@use 'partials/variables' as *;
+@use 'partials/typography' as *;
+
+// fade-in animation
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// fade-out animation
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+// default body styles
+body {
+    background-color: $white;
+    text-align: center;
+    overflow-x: hidden;
+    &.nav-open {
+            overflow-y: hidden;
+        }
+}
+
+// wrapper styles
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// button styles
+.button {
+    background-color: $color1;
+    color: $white;
+    padding: 10px 20px;
+    &:hover {
+        background-color: $color2;
+        color: $black;
+        transition: 0.4s;
+    }
+}
+
+// header styles
+header {
+    height: 500px;
+    position: relative;
+    nav {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        .hamburger-btn {
+            display: none;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+                li {
+                    a {
+                        padding: 5px 30px;
+                        &:hover {
+                            border-bottom: solid $black 2px;
+                            background-color: rgba($color1, 0.5);
+                            transition: background-color 0.75s;
+                        }
+                    }
+                    .current {
+                        padding: 5px 30px;
+                        border-bottom: solid $color1 2px;
+                    }
+                }
+            }
+        }
+    .title {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        max-width: 1200px;
+        transform: translate(-50%, -50%);
+        .logo {
+            width: 200px;
+            height: auto;
+            aspect-ratio: 1/1;
+            margin-right: 50px;
+        }
+        .heading {
+            h1, h2 {
+                padding: 0;
+                margin: 0;
+            }
+            h2 {
+                padding: 15px 0px;
+                border-bottom: solid $black 2px;
+            }
+        }
+        padding: 50px 30px;
+    }
+}
+
+.banner-1, .page-header {
+    display: flex;
+    align-items: center;
+    background-color: $color1;
+    min-height: 250px;
+    .wrapper {
+        width: 80%;
+        h3 {
+            margin: 0;
+            padding: 60px 75px;
+        }
+    }
+}
+
+.banner-2 {
+    .banner-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+.services-main {
+    .wrapper {
+        width: 85%;
+    }
+    .services-list {
+        .service {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5%;
+            h5 {
+                width: 25%;
+            }
+            p {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.profile {
+    background-color: $color2;
+    .wrapper {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px;
+        .headshot {
+            border: solid $white 10px;
+            width: 40%;
+            padding: 0;
+            }
+        .profile-text {
+            width: 55%;
+        }
+    }
+}
+
+.testimonials {
+    padding: 30px 0;
+    margin-bottom: 40px;
+    .wrapper {
+        width: 70%;
+    }
+}
+
+.testimonials-main {
+    padding-bottom: 0;
+}
+
+.services {
+    padding: 60px 0px;
+    background-color: rgba($color1, 0.75);
+    .wrapper {
+        width: 70%;
+    }
+}
+
+.contact-main {
+    background-color: $color2;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 50px 0px;
+    p {
+        width: 30%;
+    }
+    form {
+        width: 50%;
+        fieldset {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border: none;
+            label, input {
+                width: 100%;
+                margin: 5px 0px;
+            }
+            input {
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            textarea {
+                min-width: 100%;
+                margin-bottom: 20px;
+            }
+            .submit-button {
+                width: 100%;
+                display: flex;
+                justify-content: left;
+                margin-bottom: 5px;
+                .button {
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .footer-logo {
+        width: 300px;
+    }
+    margin: 40px;
+}
+
+// screens smaller than 768px
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+    header {
+        nav {
+            z-index: 4;
+            width: 110%;
+            .hamburger-btn {
+                z-index: 5;
+                display: initial;
+                position: absolute;
+                left: 2%;
+                width: 100vw;
+                button {
+                    display: flex;
+                    border: none;
+                    background-color: $color1;
+                    color: $white;
+                    height: 60px;
+                    width: 100%;
+                    i {
+                        font-size: 32px;
+                        padding: 10px 25px;
+                        transition: transform 0.5s;
+                    }
+                    &:hover {
+                        background-color: $color2;
+                        color: $black;
+                        cursor: pointer;
+                        transition: 0.5s;
+                    }
+                }
+                &.open {
+                    width: 100%;
+                    button {
+                        background-color: $white;
+                        color: $black;
+                        i {
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+            ul {
+                display: none;
+                opacity: 0;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15%;
+                position: absolute;
+                top: 0;
+                height: 100vh;
+                min-height: 500px;
+                padding: 5% 0;
+                width: 100%;
+                background-color: $color2;
+            }
+        }
+        .title {
+            width: 100%;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            .logo {
+                margin: 0px 30px;
+            }
+        }
+    }
+    .banner-1, .page-header {
+        .wrapper {
+            width: 100%;
+            h3 {
+                padding: 60px 20px;
+            }
+        }
+    }
+    .about {
+        .wrapper {
+            width: 90%;
+        }
+    }
+    .profile {
+        .wrapper {
+            width: 90%;
+            .headshot {
+                width: 90%;
+                margin: 0 auto;
+            }
+            .profile-text {
+                width: 85%;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+    }
+    .testimonials {
+        .wrapper {
+            width: 80%;
+        }
+    }
+    .services {
+        .wrapper {
+            width: 80%;
+        }
+    }
+    .services-main {
+        .wrapper {
+            width: 90%;
+        }
+        .services-list {
+            .service {
+                h5, p {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
