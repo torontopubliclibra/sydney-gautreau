@@ -421,6 +421,9 @@ footer {
   header nav ul li {
     font-size: 30px;
   }
+  .page-header h3 {
+    font-size: 45px;
+  }
   .testimonials blockquote {
     margin: 20px;
   }
