@@ -117,6 +117,7 @@ header {
             }
         }
         padding: 50px 30px;
+        animation: fade-in 1s;
     }
 }
 
@@ -130,6 +131,7 @@ header {
         h3 {
             margin: 0;
             padding: 60px 75px;
+            animation: fade-in 1s;
         }
     }
 }
@@ -294,14 +296,14 @@ footer {
         nav {
             z-index: 4;
             width: 100vw;
-            max-width: 100%;
             .hamburger-btn {
                 z-index: 5;
                 display: initial;
                 position: absolute;
-                left: -1px;
+                left: 0;
                 width: 100%;
                 button {
+                    position: relative;
                     display: flex;
                     border: none;
                     background-color: $color1;
@@ -309,8 +311,10 @@ footer {
                     height: 55px;
                     width: 100%;
                     i {
+                        position: absolute;
+                        left: 15px;
                         font-size: 30px;
-                        padding: 10px 10px;
+                        padding: 10px 5px;
                         transition: transform 0.5s;
                     }
                     &:hover {
