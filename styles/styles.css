@@ -301,6 +301,7 @@ header nav ul li a {
   margin: 20px 0;
 }
 .services-main .services-list .service p {
+  font-family: "Catamaran", sans-serif;
   font-size: 18px;
   line-height: 1.7;
   letter-spacing: 0.03;
