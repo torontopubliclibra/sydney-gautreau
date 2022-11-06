@@ -377,9 +377,17 @@ header nav ul li a {
 .services li {
   font-size: 22px;
 }
+.services a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
 
 .contact-main {
   text-align: left;
+}
+.contact-main a:hover {
+  color: #857C8D;
+  transition: 0.5s;
 }
 .contact-main p {
   font-size: 20px;
@@ -395,6 +403,10 @@ header nav ul li a {
 footer {
   font-family: "Catamaran", sans-serif;
   font-weight: 400;
+}
+footer a:hover {
+  color: #857C8D;
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -717,7 +729,7 @@ footer .footer-logo {
   }
   header nav {
     z-index: 4;
-    width: 105vw;
+    width: 100vw;
     max-width: 100%;
   }
   header nav .hamburger-btn {
