@@ -27,11 +27,11 @@ header {
   .heading {
     text-align: center;
     h1 {
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 400;
       }
     h2 {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 500;
       font-style: italic;
       line-height: 1;
@@ -179,6 +179,8 @@ header {
   p {
     font-size: 20px;
     margin: 10px 0;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
   }
   form {
     font-family: $font2;
@@ -197,7 +199,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   header {
     .heading {
       h1 {

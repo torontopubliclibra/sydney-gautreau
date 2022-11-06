@@ -251,11 +251,11 @@ header .heading {
   text-align: center;
 }
 header .heading h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 400;
 }
 header .heading h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   font-style: italic;
   line-height: 1;
@@ -392,6 +392,8 @@ header nav ul li a {
 .contact-main p {
   font-size: 20px;
   margin: 10px 0;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 .contact-main form {
   font-family: "Catamaran", sans-serif;
@@ -409,7 +411,7 @@ footer a:hover {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   header .heading h1 {
     font-size: 43px;
   }
@@ -712,12 +714,26 @@ footer .footer-logo {
   width: 300px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   header {
     height: 350px;
   }
   header .title .logo {
     width: 150px;
+  }
+  .contact-main {
+    padding: 25px;
+  }
+  .contact-main .wrapper {
+    flex-wrap: wrap;
+  }
+  .contact-main p {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .contact-main form {
+    margin: 5px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -785,8 +801,11 @@ footer .footer-logo {
     margin-top: 30px;
   }
   header .title .logo {
-    width: 115px;
+    width: 100px;
     margin-right: 20px;
+  }
+  .banner-1, .page-header {
+    min-height: 150px;
   }
   .banner-1 .wrapper, .page-header .wrapper {
     width: 100%;
@@ -820,20 +839,6 @@ footer .footer-logo {
   }
   .services-main .services-list .service h5, .services-main .services-list .service p {
     width: 90%;
-  }
-  .contact-main {
-    padding: 25px;
-  }
-  .contact-main .wrapper {
-    flex-wrap: wrap;
-  }
-  .contact-main p {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  .contact-main form {
-    margin: 5px;
-    width: 100%;
   }
   footer {
     margin: 40px 20px;

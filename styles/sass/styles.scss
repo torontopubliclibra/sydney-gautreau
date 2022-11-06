@@ -259,13 +259,27 @@ footer {
     margin: 40px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
     header {
         height: 350px;
         .title {
             .logo {
                 width: 150px;
             }
+        }
+    }
+    .contact-main {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        padding: 25px;
+        p {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        form {
+            margin: 5px;
+            width: 100%;
         }
     }
 }
@@ -336,12 +350,13 @@ footer {
             width: 100%;
             margin-top: 30px;
             .logo {
-                width: 115px;
+                width: 100px;
                 margin-right: 20px;
             }
         }
     }
     .banner-1, .page-header {
+        min-height: 150px;
         .wrapper {
             width: 100%;
             h3 {
@@ -388,20 +403,6 @@ footer {
                     width: 90%;
                 }
             }
-        }
-    }
-    .contact-main {
-        .wrapper {
-            flex-wrap: wrap;
-        }
-        padding: 25px;
-        p {
-            width: 90%;
-            margin-bottom: 20px;
-        }
-        form {
-            margin: 5px;
-            width: 100%;
         }
     }
     footer {
