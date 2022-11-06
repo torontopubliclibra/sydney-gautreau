@@ -770,7 +770,7 @@ footer .footer-logo {
   }
   header nav .hamburger-btn button i {
     position: absolute;
-    left: 15px;
+    left: 10px;
     font-size: 30px;
     padding: 10px 5px;
     transition: transform 0.5s;
