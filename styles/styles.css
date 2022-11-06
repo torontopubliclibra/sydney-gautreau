@@ -717,7 +717,7 @@ footer .footer-logo {
   }
   header nav {
     z-index: 4;
-    width: 100vw;
+    width: 105vw;
     max-width: 100%;
   }
   header nav .hamburger-btn {
