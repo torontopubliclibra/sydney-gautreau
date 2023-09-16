@@ -1,0 +1,2 @@
+# Sydney Gautreau, Editor & Writing Coach
+[Sydney Gautreau, Editor & Writing Coach](https://sydneygautreau.com) is a website for Sydney's business, written in HTML, JavaScript, and SASS, and originally built in November 2022.
