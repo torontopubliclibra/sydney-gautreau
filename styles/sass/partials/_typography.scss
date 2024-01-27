@@ -1,10 +1,56 @@
 @use 'variables' as *;
 
+// font import
+@font-face {
+  font-family: "Playfair-Display";
+  src: url(/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+// font import
+@font-face {
+  font-family: "Playfair-Display-Italic";
+  src: url(/assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+a {
+  color: $black;
+  font-style: normal;
+
+  &:hover {
+    transition: color 1s, font-style 1s;
+    font-style: italic;
+    color: $color1;
+
+    @media only screen and (max-width: 768px) {
+      color: $black;
+    }
+  }
+}
+
+// font import
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/Outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
 // font variables
-$font1: 'Playfair Display',
+$font1: 'Playfair-Display',
 serif;
-$font2: 'Catamaran',
+$font2: 'Playfair-Display-Italic',
 sans-serif;
+$font3: 'Outfit',
+sans-serif;
+
+hr {
+  background-color: rgba($color1, 0.8);
+  border-style: solid;
+  border-color: rgba($color1, 0.8);
+  height: 2px;
+  box-shadow: none;
+}
 
 body {
   font-family: $font1;
@@ -14,11 +60,19 @@ body {
   a {
     color: $black;
   }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
 }
 
 .button {
-  font-family: $font2;
-  font-size: 20px;
+  font-family: $font3;
+  font-size: 1.2rem;
   text-decoration: none;
   color: $white;
 }
@@ -27,20 +81,20 @@ header {
   .heading {
     text-align: center;
     h1 {
-        font-size: 60px;
+        font-size: 3.25rem;
         font-weight: 400;
       }
     h2 {
-      font-size: 40px;
+      font-family: $font2;
+      font-size: 2.5rem;
       font-weight: 500;
-      font-style: italic;
       line-height: 1;
     }
   }
   nav {
     ul li {
-      font-family: $font2;
-      font-size: 20px;
+      font-family: $font3;
+      font-size: 1.2rem;
       a {
         text-decoration: none;
       }
@@ -50,7 +104,8 @@ header {
 
 .banner-1, .page-header {
   h3 {
-    color: $white;
+    font-family: $font3;
+    font-style: italic;
     letter-spacing: 0.03em;
     line-height: 1.5;
     font-weight: 200;
@@ -59,36 +114,39 @@ header {
 
 .banner-1 {
   h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 .page-header {
   h3 {
-    font-size: 60px;
+    font-size: 4rem;
   }
 }
 
 .services-main {
-  font-size: 24px;
-  font-family: $font2;
+  font-size: 1.4rem;
+  font-family: $font3;
+  line-height: 1.5;
   p {
-    margin: 50px;
+    padding: 50px;
+    margin: 0;
   }
   .services-list {
     font-family: $font1;
     .service {
       text-align: left;
       h5 {
-        font-size: 30px;
+        font-size: 2rem;
         margin: 20px 0;
       }
       p {
-        font-family: $font2;
-        font-size: 18px;
+        font-family: $font3;
+        font-size: 1.2rem;
         line-height: 1.7;
         letter-spacing: 0.03;
         margin: 20px 0;
+        padding: 0;
       }
     }
   }
@@ -99,12 +157,12 @@ header {
   .testimonial {
     blockquote {
       padding-top: 30px;
-      font-family: $font2;
-      font-size: 22px;
+      font-family: $font3;
+      font-size: 1.2rem;
       text-align: left;
     }
     h4 {
-      font-size: 30px;
+      font-size: 1.5rem;
       text-align: right;
       font-weight: 400;
     }
@@ -114,37 +172,39 @@ header {
 .about {
   margin-bottom: 50px;
   h5 {
+    font-family: $font2;
     font-weight: 400;
-    font-size: 35px;
-    margin: 40px 0px;
-    font-style: italic;
+    font-size: 2.5rem;
+    padding: 40px 0px;
+    margin: 0;
   }
   p {
-    font-family: $font2;
-    font-size: 23px;
-    margin: 30px;
+    font-family: $font3;
+    font-size: 1.2rem;
+    padding: 30px;
+    margin: 0;
     line-height: 1.75;
   }
 }
 
-.profile {
-  text-align: left;
-  h4 {
-    font-size: 40px;
-    margin: 10px 0px;
-    font-weight: 400;
-  }
-  p {
-    font-family: $font2;
-    font-size: 20px;
-    line-height: 1.75;
-  }
-}
+// .profile {
+//   text-align: left;
+//   h4 {
+//     font-size: 3rem;
+//     margin: 10px 0px;
+//     font-weight: 400;
+//   }
+//   p {
+//     font-family: $font3;
+//     font-size: 1.2rem;
+//     line-height: 1.75;
+//   }
+// }
 
 .testimonials {
   text-align: right;
   blockquote {
-    font-size: 25px;
+    font-size: 2rem;
     text-align: left;
   }
   blockquote:nth-of-type(1) {
@@ -160,60 +220,49 @@ header {
 
 .services {
   text-align: left;
-  font-family: $font2;
-  font-size: 20px;
+  font-family: $font3;
+  font-size: 1.2rem;
   li {
-    font-size: 22px;
-  }
-  a:hover {
-    color: $color1;
-    transition: 0.5s;
+    font-size: 1.2rem;
   }
 }
 
 .contact-main {
   text-align: left;
-  a:hover {
-      color: $color1;
-      transition: 0.5s;
-    }
   p {
-    font-size: 20px;
+    font-family: $font3;
+    font-size: 1.25rem;
     margin: 10px 0;
     line-height: 1.25;
     letter-spacing: 0.03em;
   }
   form {
-    font-family: $font2;
+    font-family: $font3;
     p {
-      font-size: 15px;
+      font-size: 0.9rem;
     }
   }
 }
 
 footer {
-  font-family: $font2;
+  font-family: $font3;
   font-weight: 400;
-  a:hover {
-      color: $color1;
-      transition: 0.5s;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
   header {
     .heading {
       h1 {
-        font-size: 43px;
+        font-size: 2rem;
       }
       h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
       }
     }
   }
   .banner-1 {
     h3 {
-      font-size: 30px;
+      font-size: 1.75rem;
     }
   }
 }
@@ -223,49 +272,58 @@ footer {
     .heading {
       text-align: left;
       h1 {
-        font-size: 28px;
+        font-size: 1.6rem;
       }
       h2 {
-        font-size: 22px;
+        font-size: 1.4rem;
       }
     }
     nav ul li {
-      font-size: 30px;
+      font-size: 1.6rem;
     }
   }
   .page-header {
     h3 {
-      font-size: 45px;
+      font-size: 3rem;
     }
   }
   .testimonials {
     blockquote {
-      margin: 20px;
+      margin: 1.2rem;
     }
   }
   .testimonials-main {
-    padding: 20px;
+    padding: 0;
     .testimonial {
       blockquote {
-        margin: 15px;
+        font-size: 1.2rem;
+        padding-top: 0;
+        margin: 0;
       }
       h4 {
-        font-size: 28px;
+        font-size: 1.5rem;
       }
     }
   }
   .about {
     p {
-      margin: 20px 0px;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+    h5 {
+      font-size: 1.75rem;
+      padding-bottom: 30px;
     }
   }
   .services-main {
     p {
-      margin: 75px auto;
+      font-size: 1.2rem;
+      padding: 50px 15px;
+      padding-bottom: 30px;
     }
     .services-list .service {
       h5 {
-        font-size: 35px;
+        font-size: 2rem;
       }
     }
   }

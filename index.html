@@ -3,19 +3,26 @@
   <head>
 
     <!-- metadata-->
+    <title>Sydney Gautreau, Editor & Writing Coach</title>
+    <meta name="title" content="Sydney Gautreau, Editor & Writing Coach" />
+    <meta property="og:title" content="Sydney Gautreau, Editor & Writing Coach" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sydneygautreau.com/" />
+    <meta name="description" content="Editor & writing coach based in Toronto, Ontario">
+    <meta name="og:description" content="Editor & writing coach based in Toronto, Ontario">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sydney Gautreau, Editor & Writing Coach">
+    <meta name="theme-color" content="#857C8D"/>
+    <meta name="author" content="Sydney Gautreau" />
+    <meta name="keywords" content="copy editing, proofreading, stylistic editing, substantive editing, writing coaching" />
 
-    <!-- title and icon -->
-    <title>Sydney Gautreau, Editor & Writing Coach</title>
+    <!-- favicons and metadata banner -->
     <link rel="icon" href="./assets/favicon.ico" type="image/icon type" />
 
-    <!-- font imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Catamaran:wght@200;300;400&display=swap" />
+    <!-- preloaded typeface -->
+    <link rel="preload" href="./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
 
     <!-- icon imports -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -24,7 +31,6 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 
   </head>
-
 
   <body>
 
@@ -36,7 +42,9 @@
         <nav>
           <!-- mobile hamburger nav button -->
           <div class="hamburger-btn">
-            <button aria-label="Click to open navigation"><i class="fa fa-bars"></i></button>
+            <button aria-label="Click to open navigation">
+              <img src="./assets/icons/menu-lines.svg" class="menu-icon" alt="mobile menu icon">
+            </button>
           </div>
           <!-- pages list -->
           <ul>
@@ -48,15 +56,13 @@
         </nav>
 
         <!-- title section -->
-        <a href="/">
-          <div class="title">
-            <img src="./assets/logo.png" alt="Sydney Gautreau logo" class="logo">
-            <div class="heading">
-              <h1>Sydney Gautreau,</h1>
-              <h2>Editor & Writing Coach</h2>
-            </div>
+        <div class="title">
+          <img src="./assets/logo.png" alt="Sydney Gautreau logo" class="logo">
+          <div class="heading">
+            <h1>Sydney Gautreau,</h1>
+            <h2>Editor & Writing Coach</h2>
           </div>
-        </a>
+        </div>
 
       </div> <!-- wrapper end -->
     </header>
@@ -83,7 +89,7 @@
     </section>
 
     <!-- profile section -->
-    <section class="profile">
+    <!-- <section class="profile">
       <div class="wrapper">
         <img class="headshot" src="./assets/headshot.jpg" alt="Sydney Gautreau headshot">
         <div class="profile-text">
@@ -92,25 +98,25 @@
           <p>I completed my Honours Bachelor of Arts at the University of Toronto, where I graduated with High Distinction (Summa Cum Laude for the Americans) in History and English Literature. During my time there, I was published in multiple University journals and awarded the Canadian Labour Congress Book Prize.</p>
         </div>
       </div> <!-- wrapper end -->
-    </section>
+    <!-- </section> -->
 
     <!-- testimonials section -->
-    <section class="testimonials">
-      <div class="wrapper">
-        <hr />
-        <blockquote>“Sydney was not only able to help with the words I put to my thoughts, but was able to help me distill those thoughts to their most basic essentials.”</blockquote>
-        <blockquote>“She reminds you of the weight and importance of what you're doing, and pushes you out of your comfort zone into a much deeper and stronger place with grace and humour.”</blockquote>
-        <blockquote>“She is unerringly professional, superbly organized, and extremely easy to communicate with. She asked insightful questions that had me see my skills and experiences in a completely new light.”</blockquote>
-        <blockquote>“She will be my first call the next time I write a novel.”</blockquote>
-        <hr />
-        <a href="./testimonials" class="button">Testimonials</a>
-      </div> <!-- wrapper end -->
-    </section>
+    <!-- <section class="testimonials">
+      <div class="wrapper"> -->
+        <!-- <hr /> -->
+        <!-- <blockquote>“Sydney was not only able to help with the words I put to my thoughts, but was able to help me distill those thoughts to their most basic essentials.”</blockquote>
+        <blockquote>“She reminds you of the weight and importance of what you're doing, and pushes you out of your comfort zone into a much deeper and stronger place with grace and humour.”</blockquote> -->
+        <!-- <blockquote>“She is unerringly professional, superbly organized, and extremely easy to communicate with. She asked insightful questions that had me see my skills and experiences in a completely new light.”</blockquote>
+        <blockquote>“She will be my first call the next time I write a novel.”</blockquote> -->
+        <!-- <hr /> -->
+        <!-- <a href="./testimonials" class="button">Testimonials</a> -->
+      <!-- </div>
+    </section> -->
 
     <!-- services section -->
     <section class="services">
       <div class="wrapper">
-        <strong><p>Here are some of the types of projects I've worked on in the last few years:</p></strong>
+        <h4>Here are some of the types of projects I've worked on in the last few years:</h4>
         <ul>
           <li>Technical reports for governmental and nongovernmental organizations;</li>
           <li>Proposed policy revisions;</li>
@@ -120,19 +126,29 @@
           <li>Fiction manuscripts; and</li>
           <li>Non-fiction essays and articles.</li>
         </ul>
-        <strong><p>To review the services I offer, click <a href="./services">here</a>. To discuss your project in more detail, please <a href="./contact">contact me</a>.</p></strong>
+        <h4>To review the services I offer, click <a href="./services">here</a>. To discuss your project in more detail, please <a href="./contact">contact me</a>.</h4>
       </div> <!-- wrapper end -->
     </section>
 
     <!-- footer section -->
     <footer>
       <div class="wrapper">
+
         <!-- logo -->
-        <img class="footer-logo" src="./assets/footer-logo.png" alt="">
+        <!-- <img class="footer-logo" src="./assets/footer-logo.png" alt=""> -->
         <!-- credit -->
-        <p>Logo designed by <a href="https://marissakorda.com" target="_blank" rel="noreferrer">Marissa Korda</a>. Photographs by Pierre Gautreau Photography.<p />
-        <p>Website designed by <a href="https://danateagle.com" target="_blank" rel="noreferrer">Dana Teagle</a>.
+        <p>Logo designed by <a href="https://marissakorda.com" target="_blank" rel="noreferrer">Marissa Korda</a>. Photographs by Pierre Gautreau. Website designed by <a href="https://danateagle.com" target="_blank" rel="noreferrer">Dana Teagle</a>.
         </p>
+
+        <hr/>
+
+        <!-- scroll to top button -->
+        <div class="button scroll-to-top" title="Go back to top of page" tabindex="0" onKeyDown="app.scrollTopOnEnter(event.keyCode)">
+          <img src="./assets/icons/arrow-up.svg" alt="scroll up icon">
+          <p class="button-label">Back to top</p>
+          <img src="./assets/icons/arrow-up.svg" alt="scroll up icon">
+        </div>
+
       </div> <!-- wrapper end -->
     </footer>
 

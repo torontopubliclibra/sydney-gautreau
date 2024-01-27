@@ -6,6 +6,33 @@ app.body = document.querySelector('body');
 app.hamburger = document.querySelector('.hamburger-btn');
 app.hamburgerIcon = document.querySelector('.hamburger-btn i')
 app.navUl = document.querySelector('nav ul');
+app.scrollTopButton = document.querySelector(".scroll-to-top");
+
+// smoothly scroll to top function
+app.scrollTop = () => {
+
+    // smoothly scroll to the top of the page
+    window.scrollTo({top: 0, behavior: "smooth"});
+
+    // blur the button after scroll
+    document.activeElement.blur();
+},
+
+// keyboard support for scroll
+app.scrollTopOnEnter = (keyCode) => {
+
+    // store the codes for both the key pressed and the enter key
+    let key = keyCode;
+    let enter = 13;
+
+    // if a key is pressed but it is not the enter key, behave normally
+    if (key && (key !== enter)) {
+        return;
+    // if a key is pressed and it is the enter key, scroll to the top of the page
+    } else {
+        app.scrollTop();
+    };
+},
 
 // mobile hamburger nav function
 app.hamburgerFunction = () => {
@@ -17,7 +44,7 @@ app.hamburgerFunction = () => {
         app.hamburger.classList.add('open');
         app.body.classList.add('nav-open');
         app.navUl.style.display = 'flex';
-        app.navUl.style.animation = 'fade-in 0.5s';
+        app.navUl.style.animation = 'fade-in 0.75s';
         app.navUl.style.opacity = '1';
 
         // after nav is finished opening
@@ -26,7 +53,7 @@ app.hamburgerFunction = () => {
             // remove animation
             app.navUl.style.animation = '';
 
-        }, 500)
+        }, 750)
 
     // if nav is open
     } else {
@@ -34,7 +61,7 @@ app.hamburgerFunction = () => {
         // close nav
         app.hamburger.classList.remove('open');
         app.body.classList.remove('nav-open');
-        app.navUl.style.animation = 'fade-out 0.5s';
+        app.navUl.style.animation = 'fade-out 0.75s';
 
         // after nav is finished hiding
         setTimeout(function(){
@@ -44,7 +71,7 @@ app.hamburgerFunction = () => {
             app.navUl.style.display = '';
             app.navUl.style.animation = '';
 
-        }, 500)
+        }, 750)
 
     }
 
@@ -54,7 +81,9 @@ app.hamburgerFunction = () => {
 app.init = () => {
 
     // add event listener to hamburger button
-    app.hamburger.addEventListener('click', app.hamburgerFunction);
+    app.hamburger.addEventListener("click", app.hamburgerFunction);
+
+    app.scrollTopButton.addEventListener("click", app.scrollTop);
 
     // show nav when screen embiggens
     window.addEventListener("resize", () => {
