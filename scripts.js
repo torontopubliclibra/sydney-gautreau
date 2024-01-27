@@ -71,7 +71,7 @@ app.hamburgerFunction = () => {
             app.navUl.style.display = '';
             app.navUl.style.animation = '';
 
-        }, 750)
+        }, 700)
 
     }
 

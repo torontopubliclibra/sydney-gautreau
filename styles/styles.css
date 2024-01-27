@@ -343,6 +343,9 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
 }
+header nav ul li a:hover {
+  color: #28272A;
+}
 
 .banner-1 h3, .page-header h3 {
   font-family: "Outfit", sans-serif;
@@ -847,13 +850,14 @@ footer .footer-logo {
     width: 95%;
   }
   header nav {
+    position: fixed;
     z-index: 4;
     width: 100vw;
   }
   header nav .hamburger-btn {
     z-index: 5;
     display: initial;
-    position: absolute;
+    position: sticky;
     left: 0;
     width: 100%;
   }

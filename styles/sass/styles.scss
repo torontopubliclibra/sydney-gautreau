@@ -342,12 +342,13 @@ footer {
     }
     header {
         nav {
+            position: fixed;
             z-index: 4;
             width: 100vw;
             .hamburger-btn {
                 z-index: 5;
                 display: initial;
-                position: absolute;
+                position: sticky;
                 left: 0;
                 width: 100%;
                 button {

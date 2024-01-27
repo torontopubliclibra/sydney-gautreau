@@ -97,6 +97,9 @@ header {
       font-size: 1.2rem;
       a {
         text-decoration: none;
+        &:hover {
+          color: $black;
+        }
       }
     }
   }
