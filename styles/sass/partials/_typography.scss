@@ -14,21 +14,6 @@
   font-display: swap;
 }
 
-a {
-  color: $black;
-  font-style: normal;
-
-  &:hover {
-    transition: color 1s, font-style 1s;
-    font-style: italic;
-    color: $color1;
-
-    @media only screen and (max-width: $mobile) {
-      color: $black;
-    }
-  }
-}
-
 // font import
 @font-face {
   font-family: "Outfit";
@@ -43,6 +28,21 @@ $font2: 'Playfair-Display-Italic',
 sans-serif;
 $font3: 'Outfit',
 sans-serif;
+
+a {
+  color: $black;
+  font-style: normal;
+
+  &:hover {
+    transition: color 1s, font-style 1s;
+    font-style: italic;
+    color: $color1;
+
+    @media only screen and (max-width: $mobile) {
+      color: $black;
+    }
+  }
+}
 
 hr {
   background-color: rgba($color1, 0.8);
