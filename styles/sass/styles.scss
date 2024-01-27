@@ -11,7 +11,10 @@ body {
     width: 100%;
     max-width: 100vw;
     &.nav-open {
-        overflow-y: hidden;
+        // responsive to mobile
+        @media only screen and (max-width: $tablet) {
+            overflow-y: hidden;
+        }
     }
 }
 
@@ -49,7 +52,7 @@ textarea {
         font-style: italic;
         background-color: rgba($color1, 0.6);
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile) {
             font-style: normal;
             background-color: rgba($color2, 0.8);
         }
@@ -129,7 +132,7 @@ header {
                 padding: 15px 20px;
                 border-bottom: solid $color1 2px;
 
-                @media only screen and (max-width: 768px) {
+                @media only screen and (max-width: $mobile) {
                     padding: 15px 0;
                 }
             }
@@ -310,7 +313,7 @@ footer {
     margin: 40px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $tablet) {
     header {
         height: 300px;
         .title {
@@ -336,8 +339,8 @@ footer {
     }
 }
 
-// screens smaller than 768px
-@media only screen and (max-width: 768px) {
+// screens smaller than $mobile
+@media only screen and (max-width: $mobile) {
     .wrapper {
         width: 95%;
     }
@@ -371,19 +374,9 @@ footer {
                         transition: 0.5s;
                     }
                 }
-                &.open {
-                    button {
-                        background-color: $white;
-                        color: $black;
-                        img {
-                            transform: rotate(90deg);
-                        }
-                    }
-                }
             }
-            ul {
+            .nav-list {
                 opacity: 0;
-                animation: fade-in 0.75s;
                 display: none;
                 flex-direction: column;
                 justify-content: center;
@@ -419,6 +412,21 @@ footer {
                             border: initial;
                         }
                     }
+                }
+            }
+            &.active {
+                .hamburger-btn {
+                    button {
+                        background-color: $white;
+                        color: $black;
+                        img {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .nav-list {
+                    display: flex !important;
+                    opacity: 1 !important;
                 }
             }
         }

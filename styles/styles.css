@@ -306,7 +306,7 @@ body {
 body a {
   color: #28272A;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 970px) {
   body {
     font-size: 16px;
   }
@@ -396,6 +396,7 @@ header nav ul li a:hover {
 
 .testimonials-main {
   padding: 40px;
+  padding-bottom: 10px;
 }
 .testimonials-main .testimonial blockquote {
   padding-top: 30px;
@@ -475,12 +476,16 @@ footer {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 970px) {
   header .heading h1 {
     font-size: 2rem;
   }
   header .heading h2 {
     font-size: 1.75rem;
+  }
+  .contact-main .wrapper p {
+    font-size: 1.1rem;
+    text-align: center;
   }
   .banner-1 h3 {
     font-size: 1.75rem;
@@ -502,6 +507,13 @@ footer {
   header nav ul li a:hover {
     font-style: normal;
   }
+  footer p, footer a {
+    font-size: 1.1rem;
+  }
+  footer p {
+    max-width: 95%;
+    margin: 0 auto;
+  }
   .page-header h3 {
     font-size: 3rem;
   }
@@ -510,6 +522,7 @@ footer {
   }
   .testimonials-main {
     padding: 0;
+    padding-bottom: 10px;
   }
   .testimonials-main .testimonial blockquote {
     font-size: 1.2rem;
@@ -543,8 +556,10 @@ body {
   width: 100%;
   max-width: 100vw;
 }
-body.nav-open {
-  overflow-y: hidden;
+@media only screen and (max-width: 970px) {
+  body.nav-open {
+    overflow-y: hidden;
+  }
 }
 
 input, textarea {
@@ -829,7 +844,7 @@ footer .footer-logo {
   width: 250px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 970px) {
   header {
     height: 300px;
   }
@@ -837,6 +852,7 @@ footer .footer-logo {
     width: 120px;
   }
   .contact-main {
+    padding-bottom: 10px;
     padding: 25px;
   }
   .contact-main .wrapper {
@@ -886,16 +902,8 @@ footer .footer-logo {
     cursor: pointer;
     transition: 0.5s;
   }
-  header nav .hamburger-btn.open button {
-    background-color: #F5F4F6;
-    color: #28272A;
-  }
-  header nav .hamburger-btn.open button img {
-    transform: rotate(90deg);
-  }
-  header nav ul {
+  header nav .nav-list {
     opacity: 0;
-    animation: fade-in 0.75s;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -908,26 +916,37 @@ footer .footer-logo {
     width: 100%;
     background-color: #CEB6BC;
   }
-  header nav ul * {
+  header nav .nav-list * {
     animation: none;
   }
-  header nav ul li .current {
+  header nav .nav-list li .current {
     display: block;
     margin: 0 auto;
     width: 50%;
     border-width: 3px;
     padding: 10px 20px;
   }
-  header nav ul li a {
+  header nav .nav-list li a {
     display: block;
     margin: 0 auto;
     width: 50%;
     padding: 10px 20px;
     background-color: rgba(187, 133, 136, 0.8);
   }
-  header nav ul li a:hover {
+  header nav .nav-list li a:hover {
     background-color: rgba(187, 133, 136, 0.8);
     border: initial;
+  }
+  header nav.active .hamburger-btn button {
+    background-color: #F5F4F6;
+    color: #28272A;
+  }
+  header nav.active .hamburger-btn button img {
+    transform: rotate(90deg);
+  }
+  header nav.active .nav-list {
+    display: flex !important;
+    opacity: 1 !important;
   }
   header .title {
     padding: 0;
@@ -967,6 +986,9 @@ footer .footer-logo {
   }
   .services .wrapper {
     width: 80%;
+  }
+  .services-main {
+    padding-bottom: 10px;
   }
   .services-main .wrapper {
     width: 90%;

@@ -23,7 +23,7 @@ a {
     font-style: italic;
     color: $color1;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile) {
       color: $black;
     }
   }
@@ -61,7 +61,7 @@ body {
     color: $black;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet) {
     font-size: 16px;
   }
 }
@@ -256,7 +256,7 @@ footer {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $tablet) {
   header {
     .heading {
       h1 {
@@ -267,6 +267,10 @@ footer {
       }
     }
   }
+  .contact-main .wrapper p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
   .banner-1 {
     h3 {
       font-size: 1.75rem;
@@ -274,7 +278,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
   header {
     .heading {
       text-align: left;
@@ -290,6 +294,15 @@ footer {
       a:hover {
         font-style: normal;
       }
+    }
+  }
+  footer {
+    p, a {
+      font-size: 1.1rem;
+    }
+    p {
+      max-width: 95%;
+      margin: 0 auto;
     }
   }
   .page-header {
