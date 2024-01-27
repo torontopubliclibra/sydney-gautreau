@@ -340,6 +340,9 @@ header nav ul li {
   font-family: "Outfit", sans-serif;
   font-size: 1.2rem;
 }
+header nav ul li .current {
+  font-style: italic;
+}
 header nav ul li a {
   text-decoration: none;
 }
@@ -495,6 +498,9 @@ footer {
   }
   header nav ul li {
     font-size: 1.6rem;
+  }
+  header nav ul li a:hover {
+    font-style: normal;
   }
   .page-header h3 {
     font-size: 3rem;
