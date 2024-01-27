@@ -12,7 +12,10 @@ app.scrollTopButton = document.querySelector(".scroll-to-top");
 app.scrollTop = () => {
 
     // smoothly scroll to the top of the page
-    window.scrollTo({top: 0, behavior: "smooth"});
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
     // blur the button after scroll
     document.activeElement.blur();
