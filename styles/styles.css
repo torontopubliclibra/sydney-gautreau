@@ -276,7 +276,7 @@ a {
 a:hover {
   transition: color 1s, font-style 1s;
   font-style: italic;
-  color: #bb8588;
+  color: #857c8c;
 }
 @media only screen and (max-width: 768px) {
   a:hover {
@@ -290,9 +290,9 @@ a:hover {
   font-display: swap;
 }
 hr {
-  background-color: rgba(187, 133, 136, 0.8);
+  background-color: rgba(133, 124, 140, 0.8);
   border-style: solid;
-  border-color: rgba(187, 133, 136, 0.8);
+  border-color: rgba(133, 124, 140, 0.8);
   height: 2px;
   box-shadow: none;
 }
@@ -320,7 +320,7 @@ h1, h2, h3, h4 {
   font-family: "Outfit", sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
-  color: #F5F4F6;
+  color: #DAD2D6;
 }
 
 header .heading {
@@ -550,7 +550,7 @@ footer {
   }
 }
 body {
-  background-color: #F5F4F6;
+  background-color: #DAD2D6;
   text-align: center;
   overflow-x: hidden;
   width: 100%;
@@ -563,7 +563,7 @@ body {
 }
 
 input, textarea {
-  background-color: #F5F4F6;
+  background-color: #DAD2D6;
   border: none;
   padding: 10px 15px;
 }
@@ -585,7 +585,7 @@ textarea {
 
 .button {
   font-style: normal;
-  background-color: rgba(206, 182, 188, 0.8);
+  background-color: rgba(173, 163, 184, 0.8);
   color: #28272A;
   padding: 10px 20px;
   cursor: pointer;
@@ -593,12 +593,12 @@ textarea {
 }
 .button:hover {
   font-style: italic;
-  background-color: rgba(187, 133, 136, 0.6);
+  background-color: rgba(133, 124, 140, 0.6);
 }
 @media only screen and (max-width: 768px) {
   .button:hover {
     font-style: normal;
-    background-color: rgba(206, 182, 188, 0.8);
+    background-color: rgba(173, 163, 184, 0.8);
   }
 }
 .button.scroll-to-top {
@@ -639,12 +639,12 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   border-bottom: solid #28272A 2px;
-  background-color: rgba(187, 133, 136, 0.5);
+  background-color: rgba(133, 124, 140, 0.5);
   transition: background-color 0.75s;
 }
 header nav ul li .current {
   padding: 5px 30px;
-  border-bottom: solid #bb8588 2px;
+  border-bottom: solid #857c8c 2px;
 }
 header .title {
   position: absolute;
@@ -671,7 +671,7 @@ header .title .heading h1, header .title .heading h2 {
 }
 header .title .heading h2 {
   padding: 15px 20px;
-  border-bottom: solid #bb8588 2px;
+  border-bottom: solid #857c8c 2px;
 }
 @media only screen and (max-width: 768px) {
   header .title .heading h2 {
@@ -682,7 +682,7 @@ header .title .heading h2 {
 .banner-1, .page-header {
   display: flex;
   align-items: center;
-  background-color: rgba(187, 133, 136, 0.6);
+  background-color: rgba(133, 124, 140, 0.6);
 }
 .banner-1 .wrapper, .page-header .wrapper {
   width: 80%;
@@ -710,7 +710,7 @@ header .title .heading h2 {
   width: 85%;
 }
 .services-main .services-list .service {
-  background-color: rgba(206, 182, 188, 0.6);
+  background-color: rgba(173, 163, 184, 0.6);
   padding: 20px;
   margin: 30px 20px;
   display: flex;
@@ -726,7 +726,7 @@ header .title .heading h2 {
 }
 
 .profile {
-  background-color: #CEB6BC;
+  background-color: #ADA3B8;
 }
 .profile .wrapper {
   width: 80%;
@@ -737,7 +737,7 @@ header .title .heading h2 {
   padding: 40px 0px;
 }
 .profile .wrapper .headshot {
-  border: solid #F5F4F6 10px;
+  border: solid #DAD2D6 10px;
   width: 40%;
   padding: 0;
 }
@@ -757,14 +757,14 @@ header .title .heading h2 {
 }
 
 .testimonials-main .testimonial {
-  background-color: rgba(206, 182, 188, 0.6);
+  background-color: rgba(173, 163, 184, 0.6);
   padding: 20px;
   margin: 30px 20px;
 }
 
 .services {
   padding: 30px 0px;
-  background-color: rgba(206, 182, 188, 0.8);
+  background-color: rgba(173, 163, 184, 0.8);
 }
 .services .wrapper {
   width: 70%;
@@ -786,7 +786,7 @@ header .title .heading h2 {
   width: 30%;
 }
 .contact-main form {
-  background-color: rgba(206, 182, 188, 0.6);
+  background-color: rgba(173, 163, 184, 0.6);
   padding: 20px;
   margin: 30px 20px;
   margin-top: 0;
@@ -815,12 +815,12 @@ header .title .heading h2 {
   margin-bottom: 5px;
 }
 .contact-main form fieldset .submit-button .button {
-  background-color: #F5F4F6;
+  background-color: #DAD2D6;
   border: none;
   cursor: pointer;
 }
 .contact-main form fieldset .submit-button .button:hover {
-  background-color: rgba(187, 133, 136, 0.6);
+  background-color: rgba(133, 124, 140, 0.6);
 }
 
 footer {
@@ -887,7 +887,7 @@ footer .footer-logo {
     position: relative;
     display: flex;
     border: none;
-    background-color: #bb8588;
+    background-color: #857c8c;
     color: #28272A;
     height: 55px;
     width: 100%;
@@ -914,7 +914,7 @@ footer .footer-logo {
     min-height: 500px;
     padding: 5% 0;
     width: 100%;
-    background-color: #CEB6BC;
+    background-color: #ADA3B8;
   }
   header nav .nav-list * {
     animation: none;
@@ -931,14 +931,14 @@ footer .footer-logo {
     margin: 0 auto;
     width: 50%;
     padding: 10px 20px;
-    background-color: rgba(187, 133, 136, 0.8);
+    background-color: rgba(133, 124, 140, 0.8);
   }
   header nav .nav-list li a:hover {
-    background-color: rgba(187, 133, 136, 0.8);
+    background-color: rgba(133, 124, 140, 0.8);
     border: initial;
   }
   header nav.active .hamburger-btn button {
-    background-color: #F5F4F6;
+    background-color: #DAD2D6;
     color: #28272A;
   }
   header nav.active .hamburger-btn button img {
