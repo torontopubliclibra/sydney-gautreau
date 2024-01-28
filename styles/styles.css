@@ -284,6 +284,9 @@ a:hover {
   color: #857c8c;
 }
 @media only screen and (max-width: 768px) {
+  a {
+    font-style: italic;
+  }
   a:hover {
     color: #28272A;
   }
@@ -821,6 +824,11 @@ header .title .heading h2 {
 }
 .contact-main form fieldset .submit-button .button:hover {
   background-color: rgba(133, 124, 140, 0.6);
+}
+@media only screen and (max-width: 970px) {
+  .contact-main form fieldset .submit-button .button:hover {
+    background-color: #DAD2D6;
+  }
 }
 
 footer {

@@ -37,8 +37,11 @@ a {
     transition: color 1s, font-style 1s;
     font-style: italic;
     color: $color1;
+  }
 
-    @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
+    font-style: italic;
+    &:hover {
       color: $black;
     }
   }
