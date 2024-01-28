@@ -224,7 +224,7 @@ header {
     padding-bottom: 0;
     .testimonial {
         background-color: rgba($color2, 0.6);
-        padding: 20px;
+        padding: 30px;
         margin: 30px 20px;
     }
 }
@@ -265,6 +265,12 @@ header {
             label, input {
                 width: 100%;
                 margin: 5px 0px;
+            }
+            p {
+                padding-top: 10px;
+                font-size: 0.9rem !important;
+                width: 100%;
+                text-align: right !important;
             }
             input {
                 margin-bottom: 15px;
@@ -391,7 +397,7 @@ footer {
                 min-height: 500px;
                 padding: 5% 0;
                 width: 100%;
-                background-color: $color2;
+                background-color: $white;
 
                 * {
                     animation: none;
@@ -410,9 +416,9 @@ footer {
                         margin: 0 auto;
                         width: 50%;
                         padding: 10px 20px;
-                        background-color: rgba($color1, 0.8);
+                        background-color: rgba($color2, 0.8);
                         &:hover {
-                            background-color: rgba($color1, 0.8);
+                            background-color: rgba($color2, 0.8);
                             border: initial;
                         }
                     }
@@ -421,7 +427,7 @@ footer {
             &.active {
                 .hamburger-btn {
                     button {
-                        background-color: $white;
+                        background-color: $color2;
                         color: $black;
                         img {
                             transform: rotate(90deg);
@@ -479,7 +485,7 @@ footer {
     }
     .services {
         .wrapper {
-            width: 80%;
+            width: 85%;
         }
     }
     .services-main {

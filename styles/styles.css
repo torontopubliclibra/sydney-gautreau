@@ -300,6 +300,10 @@ hr {
   box-shadow: none;
 }
 
+input, textarea, label {
+  font-family: "Outfit", sans-serif;
+}
+
 body {
   font-family: "Playfair-Display", serif;
   letter-spacing: 0.4px;
@@ -352,6 +356,11 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #28272A;
+}
+@media only screen and (max-width: 768px) {
+  header nav ul li a {
+    font-style: normal;
+  }
 }
 
 .banner-1 h3, .page-header h3 {
@@ -536,6 +545,8 @@ footer {
   .about p {
     margin: 0;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .about h5 {
     font-size: 1.75rem;
@@ -762,7 +773,7 @@ header .title .heading h2 {
 }
 .testimonials-main .testimonial {
   background-color: rgba(173, 163, 184, 0.6);
-  padding: 20px;
+  padding: 30px;
   margin: 30px 20px;
 }
 
@@ -805,6 +816,12 @@ header .title .heading h2 {
 .contact-main form fieldset label, .contact-main form fieldset input {
   width: 100%;
   margin: 5px 0px;
+}
+.contact-main form fieldset p {
+  padding-top: 10px;
+  font-size: 0.9rem !important;
+  width: 100%;
+  text-align: right !important;
 }
 .contact-main form fieldset input {
   margin-bottom: 15px;
@@ -922,7 +939,7 @@ footer .footer-logo {
     min-height: 500px;
     padding: 5% 0;
     width: 100%;
-    background-color: #ADA3B8;
+    background-color: #DAD2D6;
   }
   header nav .nav-list * {
     animation: none;
@@ -939,14 +956,14 @@ footer .footer-logo {
     margin: 0 auto;
     width: 50%;
     padding: 10px 20px;
-    background-color: rgba(133, 124, 140, 0.8);
+    background-color: rgba(173, 163, 184, 0.8);
   }
   header nav .nav-list li a:hover {
-    background-color: rgba(133, 124, 140, 0.8);
+    background-color: rgba(173, 163, 184, 0.8);
     border: initial;
   }
   header nav.active .hamburger-btn button {
-    background-color: #DAD2D6;
+    background-color: #ADA3B8;
     color: #28272A;
   }
   header nav.active .hamburger-btn button img {
@@ -993,7 +1010,7 @@ footer .footer-logo {
     width: 80%;
   }
   .services .wrapper {
-    width: 80%;
+    width: 85%;
   }
   .services-main .wrapper {
     width: 90%;
