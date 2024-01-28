@@ -284,6 +284,9 @@ a:hover {
   color: #857c8c;
 }
 @media only screen and (max-width: 768px) {
+  a {
+    font-style: italic;
+  }
   a:hover {
     color: #28272A;
   }
@@ -293,12 +296,13 @@ hr {
   background-color: rgba(133, 124, 140, 0.8);
   border-style: solid;
   border-color: rgba(133, 124, 140, 0.8);
-  height: 2px;
+  height: 1px;
   box-shadow: none;
 }
 
 body {
   font-family: "Playfair-Display", serif;
+  letter-spacing: 0.4px;
   font-size: 18px;
   font-weight: 400;
   color: #28272A;
@@ -353,7 +357,6 @@ header nav ul li a:hover {
 .banner-1 h3, .page-header h3 {
   font-family: "Outfit", sans-serif;
   font-style: italic;
-  letter-spacing: 0.03em;
   line-height: 1.5;
   font-weight: 200;
 }
@@ -389,7 +392,6 @@ header nav ul li a:hover {
   font-family: "Outfit", sans-serif;
   font-size: 1.2rem;
   line-height: 1.7;
-  letter-spacing: 0.03;
   margin: 20px 0;
   padding: 0;
 }
@@ -462,7 +464,6 @@ header nav ul li a:hover {
   font-size: 1.25rem;
   margin: 10px 0;
   line-height: 1.25;
-  letter-spacing: 0.03em;
 }
 .contact-main form {
   font-family: "Outfit", sans-serif;
@@ -638,13 +639,13 @@ header nav ul li a {
   padding: 5px 30px;
 }
 header nav ul li a:hover {
-  border-bottom: solid #28272A 2px;
+  border-bottom: solid #28272A 3px;
   background-color: rgba(133, 124, 140, 0.5);
   transition: background-color 0.75s;
 }
 header nav ul li .current {
   padding: 5px 30px;
-  border-bottom: solid #857c8c 2px;
+  border-bottom: solid #857c8c 3px;
 }
 header .title {
   position: absolute;
@@ -671,7 +672,7 @@ header .title .heading h1, header .title .heading h2 {
 }
 header .title .heading h2 {
   padding: 15px 20px;
-  border-bottom: solid #857c8c 2px;
+  border-bottom: solid #857c8c 3px;
 }
 @media only screen and (max-width: 768px) {
   header .title .heading h2 {
@@ -704,7 +705,7 @@ header .title .heading h2 {
 }
 
 .services-main {
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 .services-main .wrapper {
   width: 85%;
@@ -756,6 +757,9 @@ header .title .heading h2 {
   margin-bottom: 60px;
 }
 
+.testimonials-main {
+  padding-bottom: 0;
+}
 .testimonials-main .testimonial {
   background-color: rgba(173, 163, 184, 0.6);
   padding: 20px;
@@ -775,7 +779,7 @@ header .title .heading h2 {
 
 .contact-main {
   padding: 50px 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 .contact-main .wrapper {
   display: flex;
@@ -822,6 +826,11 @@ header .title .heading h2 {
 .contact-main form fieldset .submit-button .button:hover {
   background-color: rgba(133, 124, 140, 0.6);
 }
+@media only screen and (max-width: 970px) {
+  .contact-main form fieldset .submit-button .button:hover {
+    background-color: #DAD2D6;
+  }
+}
 
 footer {
   margin: 40px;
@@ -852,7 +861,6 @@ footer .footer-logo {
     width: 120px;
   }
   .contact-main {
-    padding-bottom: 10px;
     padding: 25px;
   }
   .contact-main .wrapper {
@@ -986,9 +994,6 @@ footer .footer-logo {
   }
   .services .wrapper {
     width: 80%;
-  }
-  .services-main {
-    padding-bottom: 10px;
   }
   .services-main .wrapper {
     width: 90%;

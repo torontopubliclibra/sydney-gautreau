@@ -95,14 +95,14 @@ header {
                     a {
                         padding: 5px 30px;
                         &:hover {
-                            border-bottom: solid $black 2px;
+                            border-bottom: solid $black 3px;
                             background-color: rgba($color1, 0.5);
                             transition: background-color 0.75s;
                         }
                     }
                     .current {
                         padding: 5px 30px;
-                        border-bottom: solid $color1 2px;
+                        border-bottom: solid $color1 3px;
                     }
                 }
             }
@@ -130,7 +130,7 @@ header {
             }
             h2 {
                 padding: 15px 20px;
-                border-bottom: solid $color1 2px;
+                border-bottom: solid $color1 3px;
 
                 @media only screen and (max-width: $mobile) {
                     padding: 15px 0;
@@ -166,7 +166,7 @@ header {
 }
 
 .services-main {
-    padding-bottom: 20px;
+    padding-bottom: 0;
     .wrapper {
         width: 85%;
     }
@@ -221,6 +221,7 @@ header {
 }
 
 .testimonials-main {
+    padding-bottom: 0;
     .testimonial {
         background-color: rgba($color2, 0.6);
         padding: 20px;
@@ -241,7 +242,7 @@ header {
 
 .contact-main {
     padding: 50px 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     .wrapper {
         display: flex;
         justify-content: center;
@@ -282,6 +283,10 @@ header {
                     cursor: pointer;
                     &:hover {
                         background-color: rgba($color1, 0.6);
+
+                        @media only screen and (max-width: $tablet) {
+                            background-color: $white;
+                        }
                     }
                 }
             }
@@ -323,7 +328,6 @@ footer {
         }
     }
     .contact-main {
-        padding-bottom: 10px;
         .wrapper {
             flex-wrap: wrap;
         }
@@ -479,7 +483,6 @@ footer {
         }
     }
     .services-main {
-        padding-bottom: 10px;
         .wrapper {
             width: 90%;
         }
