@@ -304,6 +304,16 @@ input, textarea, label {
   font-family: "Outfit", sans-serif;
 }
 
+.four-oh-four h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.four-oh-four a {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+}
+
 body {
   font-family: "Playfair-Display", serif;
   letter-spacing: 0.4px;
@@ -658,6 +668,25 @@ header nav ul li .current {
   padding: 5px 30px;
   border-bottom: solid #857c8c 3px;
 }
+header.four-oh-four {
+  height: 200px;
+}
+header.four-oh-four .title {
+  top: 35% !important;
+}
+header.four-oh-four .title .logo {
+  width: 120px;
+  margin-right: 20px;
+}
+header.four-oh-four .heading h1 {
+  font-size: 1.6rem;
+  text-align: left !important;
+}
+header.four-oh-four .heading h2 {
+  font-size: 1.4rem;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
 header .title {
   position: absolute;
   display: flex;
@@ -702,6 +731,10 @@ header .title .heading h2 {
 .banner-1 .wrapper h3, .page-header .wrapper h3 {
   margin: 0;
   padding: 40px 75px;
+}
+.banner-1.four-oh-four, .page-header.four-oh-four {
+  height: 400px;
+  padding-bottom: 40px;
 }
 
 .banner-2 {

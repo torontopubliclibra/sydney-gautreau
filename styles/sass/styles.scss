@@ -107,6 +107,29 @@ header {
                 }
             }
         }
+
+    &.four-oh-four {
+        height: 200px;
+
+        .title {
+            top: 35% !important;
+            .logo {
+                width: 120px;
+                margin-right: 20px;
+            }
+        }
+        .heading {
+            h1 {
+                font-size: 1.6rem;
+                text-align: left !important;
+            }
+            h2 {
+                font-size: 1.4rem;
+                text-align: left !important;
+                padding-left: 0 !important;
+            }
+          }
+    }
     .title {
         position: absolute;
         display: flex;
@@ -152,6 +175,10 @@ header {
             margin: 0;
             padding: 40px 75px;
         }
+    }
+    &.four-oh-four {
+        height: 400px;
+        padding-bottom: 40px;
     }
 }
 
